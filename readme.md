@@ -10,6 +10,9 @@ ____ _ ____ ____ _ _ _  __  _    _       ___   __  _  _
 
 Ban Spammers to Windows Defender Firewall. Use of various reject methods in EventHandlers.vbs to call Firewall Ban. Integrated web admin.
 
+Demo here: https://firewallban.dynu.net/
+
+The demo is a fully functioning PHP web admin so you can how to administer hMailServer-triggered bans.
 
 ## Prerequisites
 
@@ -105,6 +108,8 @@ IDS is very simple, but pure genius. It counts the number of connections that di
 
 ## Changelog
 
+- 0.97 Fix for apparent MySQL bug timeout on first connection due to SSL - more info here: http://www.voidcn.com/article/p-phfoefri-bpr.html
+- 0.96 fixed reban-ip.php to not cause ip-api.com to rate limit
 - 0.95 formatting on on BlockCount.ps1, hmsUpdateChartTables.ps1, blocks-ps.php
 - 0.94 housekeeping on BlockCount.ps1, index.php, blocks-ps.php
 - 0.93 added blocks-ps.php to launch BlockCount.ps1 which emails results (for use when blocks.php runs into execution time errors); changed EmailResults function to send HTML messages; added HTML with links back to webadmin in BlockCount.ps1; changes to config files for new variables
